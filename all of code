@@ -1,0 +1,85 @@
+# html 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Script.js"></script>
+</head>
+<body>
+  
+    <div class="row">
+      <div>
+          <div id="onf">
+            <h1>welcomend til røyken vindregånde skole</h1>
+            <h3>Rektor og skolens ledelse</h3>
+            <input type ="text" id ="" placeholder="søk etter person"><br><br>
+            <input type="button" onclick="retur()" value="finn ansatt">
+          </div>
+      </div>
+       <br><br><br>
+       <div id="svar">
+           <div id="conimg"></div>
+           <div class="info">
+               <h3 id="ansattid"></h3>
+               <p id="ansattp"></p>
+               <p> Molestiae saepe mollitia sint ipsam unde praesentium at. Vel praesentium aut facilis. Voluptate illo qui quo sed rerum unde omnis. Sit eos autem modi.
+
+            </p>
+           </div>
+           
+       </div>
+      
+      
+      
+      
+    </div>
+    
+</body>
+</html>
+
+#css
+
+body {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#onf h2 {
+    border-style: dashed;
+    border-color: aqua ;
+    border-radius: 5px;
+}
+#svar {
+    text-align: left;
+}
+img {
+    width: 50px;
+}
+
+# javascript
+
+var navn = ["Laila Johanne Handelsby","Torben Andersen","Martin Sandø-Frank","Cathrine Mannsaker","Anette Øwre Bollvåg","Anne Raastad-Hoel","Erik Bergerud","Camilla Engberg","Sissel Moen",]
+var inf = ["Rektor","Assisterende rektor","Studieleder","Undervisningsleder","Undervisningsleder","Undervisningsleder","Undervisningsleder","Undervisningsleder", "Administrasjonsleder",]
+var i;
+var imf;
+
+function retur() {
+    let lis = document.getElementById("pers").ariaValueMax;
+    i = navn.indexOf(lis);
+    if (i l= -1) {
+        document.getElementById("ansattID").innerHTML = lis;
+        console.log("lis = " + lis);.
+        imf = "<img src="imgDom7 + i + ".jpg>";
+        console.log(i);
+        document.getElementById("ansattp").innerHTML = inf[i];
+        document.getElementById("coming").innerHTML = imf;
+        document.getElementById("lor").innerHTML = nope;
+    
+    }
+    else {
+        document.getElementById("ansattId").innerHTML = "den";
+    }
+}
